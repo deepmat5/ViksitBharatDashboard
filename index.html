@@ -12,7 +12,7 @@ body{margin:0;font-family:Arial,sans-serif;background:#f7f8fa;color:#1f2937}head
 .initGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
 .initField{background:white;border:1px solid #edf1f4;border-radius:9px;padding:10px}
 .initField b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#6b7d8d;margin-bottom:5px}
-.childCount{font-size:11px;color:#607789;font-weight:400}
+.childCount{font-size:11px;color:#607789;font-weight:400}.finBadge{display:inline-block;margin-left:8px;padding:3px 7px;border-radius:999px;background:#fff3cd;color:#705b00;border:1px solid #ecd98d;font-size:10px;font-weight:700;vertical-align:middle}
 .sourceLinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
 a{color:#245a84}@media(max-width:800px){.cards,.riskgrid{grid-template-columns:1fr 1fr}.initGrid{grid-template-columns:1fr}}@media(max-width:520px){.cards,.riskgrid{grid-template-columns:1fr}.initNode.level1{margin-left:10px}.initNode.level2{margin-left:20px}}
 </style></head><body>
@@ -33,12 +33,12 @@ function renderThemeTabs(){
 function flattenInitiatives(nodes){let out=[];for(const n of nodes){out.push(n);if(n.children)out=out.concat(flattenInitiatives(n.children))}return out}
 function renderInitNode(x,level=0){
  const kids=x.children||[];
- const links='<div class="sourceLinks">'+(x.source?'<a target="_blank" href="'+esc(x.source)+'">Official source</a>':'')+(x.news&&x.news!==x.source?'<a target="_blank" href="'+esc(x.news)+'">Latest update / news</a>':'')+'</div>';
+ const links='<div class="sourceLinks">'+(x.source?'<a target="_blank" href="'+esc(x.source)+'">Official source</a>':'')+(x.news&&x.news!==x.source?'<a target="_blank" href="'+esc(x.news)+'">Latest update / news</a>':'')+'</div>'; const fin=x.financial_metric_type?'<span class="finBadge">'+esc(x.financial_metric_type)+'</span>':'';
  const fields=[
    ['Type',x.type],['Start',x.start],['Lead ministry / department',x.ministry],['Budget / outlay',x.budget],
    ['Spent / disbursed',x.spent],['Progress',x.progress],['Target / objective',x.target],['Latest update',x.latest]
  ].filter(z=>z[1]);
- return '<details class="initNode level'+Math.min(level,2)+'" '+(level===0?'':'')+'><summary><span>'+esc(x.name)+(x.type?' <span class="pill">'+esc(x.type)+'</span>':'')+'</span>'+(kids.length?'<span class="childCount">'+kids.length+' sub-item'+(kids.length>1?'s':'')+'</span>':'')+'</summary><div class="initMeta"><div class="initGrid">'+fields.map(z=>'<div class="initField"><b>'+esc(z[0])+'</b>'+esc(z[1])+'</div>').join('')+'</div>'+links+(kids.length?'<div style="margin-top:12px">'+kids.map(k=>renderInitNode(k,level+1)).join('')+'</div>':'')+'</div></details>';
+ return '<details class="initNode level'+Math.min(level,2)+'" '+(level===0?'':'')+'><summary><span>'+esc(x.name)+(x.type?' <span class="pill">'+esc(x.type)+'</span>':'')+fin+'</span>'+(kids.length?'<span class="childCount">'+kids.length+' sub-item'+(kids.length>1?'s':'')+'</span>':'')+'</summary><div class="initMeta"><div class="initGrid">'+fields.map(z=>'<div class="initField"><b>'+esc(z[0])+'</b>'+esc(z[1])+'</div>').join('')+'</div>'+links+(kids.length?'<div style="margin-top:12px">'+kids.map(k=>renderInitNode(k,level+1)).join('')+'</div>':'')+'</div></details>';
 }
 function renderInitiatives(){
  const qi=$('#qI').value.toLowerCase(),pi=$('#pI').value;
