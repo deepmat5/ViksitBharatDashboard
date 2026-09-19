@@ -347,9 +347,11 @@
           "target": "Expand domestic manufacturing capacity and global competitiveness.",
           "latest": "Government reported strong investment, employment and export gains across PLI sectors in July 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287008&lang=2&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287008&lang=2&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287008&lang=2&reg=48",
+          "financial_metric_type": "Direct transfer / disbursement"
         }
-      ]
+      ],
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Manufacturing & industry",
@@ -363,7 +365,8 @@
       "target": "Build domestic capacity and reduce critical external vulnerabilities.",
       "latest": "Tracked here as an umbrella; linked programmes are shown separately where they have identifiable budgets and metrics.",
       "source": "https://www.pib.gov.in/",
-      "news": "https://www.pib.gov.in/"
+      "news": "https://www.pib.gov.in/",
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Entrepreneurship",
@@ -390,7 +393,8 @@
           "target": "Catalyse domestic venture-capital investment.",
           "latest": "Startup India continues to list FFS as a core scaling-stage funding instrument.",
           "source": "https://www.startupindia.gov.in/content/sih/en/about-startup-india-initiative.html",
-          "news": "https://www.startupindia.gov.in/"
+          "news": "https://www.startupindia.gov.in/",
+          "financial_metric_type": "Direct transfer / disbursement"
         },
         {
           "name": "Startup India Seed Fund Scheme (SISFS)",
@@ -403,7 +407,8 @@
           "target": "Support about 3,600 entrepreneurs through 300 incubators.",
           "latest": "The scheme's final application/selection cycle was extended into 2026.",
           "source": "https://seedfund.startupindia.gov.in/about",
-          "news": "https://seedfund.startupindia.gov.in/"
+          "news": "https://seedfund.startupindia.gov.in/",
+          "financial_metric_type": "Direct transfer / disbursement"
         },
         {
           "name": "Credit Guarantee Scheme for Startups (CGSS)",
@@ -416,9 +421,11 @@
           "target": "Improve collateral-free debt access for DPIIT-recognised startups.",
           "latest": "Revised framework increased the maximum eligible debt coverage per borrower.",
           "source": "https://www.startupindia.gov.in/content/sih/en/credit-guarantee-scheme-for-startups.html",
-          "news": "https://www.startupindia.gov.in/content/sih/en/credit-guarantee-scheme-for-startups.html"
+          "news": "https://www.startupindia.gov.in/content/sih/en/credit-guarantee-scheme-for-startups.html",
+          "financial_metric_type": "Approved outlay / corpus"
         }
-      ]
+      ],
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Skills & jobs",
@@ -445,7 +452,8 @@
           "target": "Industry-aligned skilling and employability.",
           "latest": "PMKVY remains one of the principal Skill India delivery schemes.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
+          "financial_metric_type": "Actual expenditure / utilisation"
         },
         {
           "name": "Jan Shikshan Sansthan (JSS)",
@@ -458,7 +466,8 @@
           "target": "Expand accessible livelihood-oriented skills.",
           "latest": "Listed by MSDE as a core Skill India delivery scheme in 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
+          "financial_metric_type": "Actual expenditure / utilisation"
         },
         {
           "name": "National Apprenticeship Promotion Scheme (NAPS)",
@@ -471,7 +480,8 @@
           "target": "Expand work-based learning and industry training.",
           "latest": "Listed by MSDE as a core Skill India delivery scheme in 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
+          "financial_metric_type": "Actual expenditure / utilisation"
         },
         {
           "name": "Craftsmen Training Scheme / ITIs",
@@ -484,9 +494,11 @@
           "target": "Build job-ready technical skills.",
           "latest": "MSDE continues to identify CTS through ITIs as a principal Skill India channel.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2286581&lang=1&reg=3",
+          "financial_metric_type": "Programme finance / non-comparable"
         }
-      ]
+      ],
+      "financial_metric_type": "Multiple programme budgets"
     },
     {
       "theme": "Youth",
@@ -500,7 +512,8 @@
       "target": "Expand volunteering, experiential learning, leadership, skilling and civic participation.",
       "latest": "AI CV tools, CSC integration and experiential-learning programmes were expanded in 2026.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295492&lang=1&reg=6",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295492&lang=1&reg=6"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295492&lang=1&reg=6",
+      "financial_metric_type": "Actual expenditure / utilisation"
     },
     {
       "theme": "Education",
@@ -527,7 +540,8 @@
           "target": "Develop 14,500+ exemplar schools aligned with NEP 2020.",
           "latest": "Government published an updated PM SHRI progress review in Sep 2026.",
           "source": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=159901&id=159901&lang=1&reg=6",
-          "news": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=159901&id=159901&lang=1&reg=6"
+          "news": "https://www.pib.gov.in/PressNoteDetails.aspx?ModuleId=3&NoteId=159901&id=159901&lang=1&reg=6",
+          "financial_metric_type": "Approved outlay / corpus"
         },
         {
           "name": "NIPUN Bharat",
@@ -540,7 +554,8 @@
           "target": "Universal foundational literacy and numeracy in the foundational grades.",
           "latest": "Government issued a detailed NIPUN Bharat implementation update in Jul 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2291340&lang=1&reg=3",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2291340&lang=1&reg=3"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2291340&lang=1&reg=3",
+          "financial_metric_type": "Actual expenditure / utilisation"
         },
         {
           "name": "ULLAS / New India Literacy Programme",
@@ -553,7 +568,8 @@
           "target": "5 crore learners over the scheme period.",
           "latest": "ULLAS remains a named NEP implementation initiative in the 2026 education update.",
           "source": "https://www.pib.gov.in/Pressreleaseshare.aspx?PRID=1798805&lang=2&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48",
+          "financial_metric_type": "Approved outlay / corpus"
         },
         {
           "name": "APAAR",
@@ -566,7 +582,8 @@
           "target": "Enable portable, interoperable academic records.",
           "latest": "Listed by the Ministry as a major higher-education implementation reform in Aug 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48",
+          "financial_metric_type": "Programme finance / non-comparable"
         },
         {
           "name": "SWAYAM Plus",
@@ -579,9 +596,11 @@
           "target": "Upskill and reskill students and workers in industry-relevant areas.",
           "latest": "Ministry of Education reported continued expansion in Aug 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297131&lang=2&reg=48",
+          "financial_metric_type": "Programme finance / non-comparable"
         }
-      ]
+      ],
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Digital",
@@ -608,7 +627,8 @@
           "target": "Rural broadband connectivity.",
           "latest": "Government reported expanded rural digital infrastructure in Aug 2026.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
+          "financial_metric_type": "Programme finance / non-comparable"
         },
         {
           "name": "Common Service Centres (CSCs)",
@@ -621,7 +641,8 @@
           "target": "Last-mile access to digital public services.",
           "latest": "Latest Digital India update reports continued expansion.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
+          "financial_metric_type": "Operating / platform finance"
         },
         {
           "name": "DigiLocker",
@@ -634,7 +655,8 @@
           "target": "Paperless, portable access to authenticated documents.",
           "latest": "Tracked as part of Digital India's citizen-services ecosystem.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
+          "financial_metric_type": "Actual expenditure / utilisation"
         },
         {
           "name": "UMANG",
@@ -647,9 +669,11 @@
           "target": "Simplify access to public services across departments.",
           "latest": "Tracked as part of Digital India's citizen-service ecosystem.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2295635&lang=1&reg=48",
+          "financial_metric_type": "Actual expenditure / utilisation"
         }
-      ]
+      ],
+      "financial_metric_type": "Multiple programme budgets"
     },
     {
       "theme": "Infrastructure",
@@ -663,7 +687,8 @@
       "target": "Integrated, multimodal, data-driven infrastructure planning.",
       "latest": "58 Central ministries/departments and all 36 States/UTs were onboarded; the public platform expanded access to analytics.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818&lang=2&reg=48",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818&lang=2&reg=48"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297818&lang=2&reg=48",
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Housing",
@@ -677,7 +702,8 @@
       "target": "Housing for All in rural areas; cumulative allocation of 4.18 crore houses.",
       "latest": "79 lakh sanctioned houses remained under construction in Aug 2026.",
       "source": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297784&lang=2&reg=48",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297771&lang=1&reg=3"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2297771&lang=1&reg=3",
+      "financial_metric_type": "Actual expenditure / utilisation"
     },
     {
       "theme": "Health",
@@ -704,7 +730,8 @@
           "target": "₹5 lakh per family per year for eligible secondary and tertiary hospital care, with later coverage expansions.",
           "latest": "Coverage expanded to all citizens aged 70+ irrespective of income in 2024.",
           "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2294278&lang=1&reg=6",
-          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2294278&lang=1&reg=6"
+          "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2294278&lang=1&reg=6",
+          "financial_metric_type": "Authorised healthcare value"
         },
         {
           "name": "Ayushman Arogya Mandirs",
@@ -717,9 +744,11 @@
           "target": "Comprehensive primary healthcare close to communities.",
           "latest": "Government reported continued national expansion in Aug 2026.",
           "source": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=150834&lang=15&reg=24",
-          "news": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=150834&lang=15&reg=24"
+          "news": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=150834&lang=15&reg=24",
+          "financial_metric_type": "Programme finance / non-comparable"
         }
-      ]
+      ],
+      "financial_metric_type": "Multiple programme budgets"
     },
     {
       "theme": "Women & rural livelihoods",
@@ -759,11 +788,14 @@
               "target": "Support selected women SHGs with drone-based agricultural service enterprises.",
               "latest": "Government reiterated the scheme design and financing model in Mar 2026.",
               "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244648&lang=1&reg=1",
-              "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244648&lang=1&reg=1"
+              "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244648&lang=1&reg=1",
+              "financial_metric_type": "Actual expenditure / utilisation"
             }
-          ]
+          ],
+          "financial_metric_type": "Programme finance / non-comparable"
         }
-      ]
+      ],
+      "financial_metric_type": "Actual expenditure / utilisation"
     },
     {
       "theme": "Farmers",
@@ -777,7 +809,8 @@
       "target": "₹6,000 per year in three instalments to eligible farmers through DBT.",
       "latest": "22nd instalment released in Mar 2026.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2244630&lang=1&reg=1",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238588&lang=1&reg=6"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2238588&lang=1&reg=6",
+      "financial_metric_type": "Direct transfer / disbursement"
     },
     {
       "theme": "Farmers",
@@ -791,7 +824,8 @@
       "target": "Expand post-harvest, storage, logistics and farm-gate infrastructure.",
       "latest": "2026 agriculture review reported continuing project and investment growth.",
       "source": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc202665884101.pdf",
-      "news": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc202665884101.pdf"
+      "news": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2026/jun/doc202665884101.pdf",
+      "financial_metric_type": "Loans sanctioned / investment mobilised"
     },
     {
       "theme": "Climate & energy",
@@ -805,7 +839,8 @@
       "target": "500 GW of non-fossil electricity capacity by 2030.",
       "latest": "Dashboard benchmark tracks current installed capacity separately.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Climate & energy",
@@ -819,7 +854,8 @@
       "target": "Net-zero greenhouse-gas emissions by 2070.",
       "latest": "Net Zero Portal and NAPCC Dashboard launched 16 Sep 2026.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310737&lang=1&reg=3",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310737&lang=1&reg=3"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310737&lang=1&reg=3",
+      "financial_metric_type": "No single programme budget"
     },
     {
       "theme": "Governance",
@@ -833,7 +869,8 @@
       "target": "Transparent, efficient and inclusive public procurement.",
       "latest": "GeM completed ten years of operations in Aug 2026.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296138&lang=2&reg=48",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296138&lang=2&reg=48"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296138&lang=2&reg=48",
+      "financial_metric_type": "Procurement volume / GMV"
     },
     {
       "theme": "Governance",
@@ -847,7 +884,8 @@
       "target": "Reduce unnecessary compliance burdens and increase regulatory certainty.",
       "latest": "Jan Vishwas reforms in 2026 amended 784 provisions across 79 Central Acts.",
       "source": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=150871&lang=16&reg=5",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298971&lang=1&reg=3"
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2298971&lang=1&reg=3",
+      "financial_metric_type": "Actual expenditure / utilisation"
     },
     {
       "theme": "Security",
@@ -861,7 +899,8 @@
       "target": "Protect digital systems, public services, data and critical infrastructure.",
       "latest": "Treat as a strategic portfolio rather than a single scheme; add programme-level budget lines as they are incorporated.",
       "source": "https://www.cert-in.org.in/",
-      "news": "https://www.cert-in.org.in/"
+      "news": "https://www.cert-in.org.in/",
+      "financial_metric_type": "Actual expenditure / utilisation"
     },
     {
       "theme": "Global role",
@@ -875,7 +914,8 @@
       "target": "Expand market access and reduce concentration risks.",
       "latest": "The Department of Commerce continues to publish FTA and trade-policy updates.",
       "source": "https://www.commerce.gov.in/",
-      "news": "https://www.commerce.gov.in/"
+      "news": "https://www.commerce.gov.in/",
+      "financial_metric_type": "No single programme budget"
     }
   ],
   "updated": "2026-09-19"
