@@ -4,15 +4,15 @@ body{margin:0;font-family:Arial,sans-serif;background:#f7f8fa;color:#1f2937}head
 .initNode{border:1px solid #dbe3e9;border-radius:12px;background:#fbfcfd;overflow:hidden}
 .initNode.level1{margin-left:24px;border-left:4px solid #4f9c96}
 .initNode.level2{margin-left:48px;border-left:4px solid #8fbdb8}
-.initNode summary{cursor:pointer;padding:14px 16px;font-weight:700;color:#173f5f;list-style:none;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.initNode summary{cursor:pointer;padding:14px 16px;font-weight:700;color:#173f5f;list-style:none;display:flex;gap:10px;align-items:center;justify-content:flex-start;text-align:left}
 .initNode summary::-webkit-details-marker{display:none}
-.initNode summary:before{content:'＋';font-size:16px;color:#607789;margin-right:4px}
+.initNode summary:before{content:'＋';font-size:16px;color:#607789;margin-right:4px;flex:0 0 auto}
 .initNode[open]>summary:before{content:'−'}
 .initMeta{padding:0 16px 16px}
 .initGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 18px}
 .initField{background:white;border:1px solid #edf1f4;border-radius:9px;padding:10px}
 .initField b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#6b7d8d;margin-bottom:5px}
-.childCount{font-size:11px;color:#607789;font-weight:400}.finBadge{display:inline-block;margin-left:8px;padding:3px 7px;border-radius:999px;background:#fff3cd;color:#705b00;border:1px solid #ecd98d;font-size:10px;font-weight:700;vertical-align:middle}
+.childCount{font-size:11px;color:#607789;font-weight:400;margin-left:8px}.finBadge{display:inline-block;margin-left:8px;padding:3px 7px;border-radius:999px;background:#fff3cd;color:#705b00;border:1px solid #ecd98d;font-size:10px;font-weight:700;vertical-align:middle}
 .sourceLinks{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
 a{color:#245a84}@media(max-width:800px){.cards,.riskgrid{grid-template-columns:1fr 1fr}.initGrid{grid-template-columns:1fr}}@media(max-width:520px){.cards,.riskgrid{grid-template-columns:1fr}.initNode.level1{margin-left:10px}.initNode.level2{margin-left:20px}}
 </style></head><body>
