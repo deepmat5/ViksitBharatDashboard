@@ -14,7 +14,8 @@
       "target_year": "2047",
       "unit": "% annual",
       "notes": "World Bank says ~7.8% average growth is needed to reach high-income status by 2047; FY2025-26 provisional real GDP growth is 7.7%.",
-      "source": "https://www.worldbank.org/en/news/press-release/2025/02/28/india-accelerated-reforms-needed-to-speed-up-growth-and-achieve-high-income-status-by-2047"
+      "source": "https://www.worldbank.org/en/news/press-release/2025/02/28/india-accelerated-reforms-needed-to-speed-up-growth-and-achieve-high-income-status-by-2047",
+      "status": "Active"
     },
     {
       "pillar": "Economy",
@@ -30,7 +31,8 @@
       "target_year": "2030",
       "unit": "% of GDP",
       "notes": "Economic Survey states investment rate must rise to ~35% of GDP from ~31%.",
-      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf"
+      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
+      "status": "Active"
     },
     {
       "pillar": "Economy",
@@ -46,7 +48,8 @@
       "target_year": "2030",
       "unit": "million/year",
       "notes": "Economic Survey estimates 78.5 lakh new non-farm jobs needed annually until 2030.",
-      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf"
+      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
+      "status": "Active"
     },
     {
       "pillar": "Economy",
@@ -62,7 +65,8 @@
       "target_year": "2047",
       "unit": "US$ bn",
       "notes": "Record total exports in FY2025-26. No single 2047 export target entered.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290437"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290437",
+      "status": "Active"
     },
     {
       "pillar": "Human Development",
@@ -78,7 +82,8 @@
       "target_year": "2047",
       "unit": "%",
       "notes": "Economic Survey identifies 100% literacy as necessary for Viksit Bharat.",
-      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf"
+      "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
+      "status": "Active"
     },
     {
       "pillar": "Human Development",
@@ -94,7 +99,8 @@
       "target_year": "2047",
       "unit": "%",
       "notes": "Monthly PLFS: female LFPR 32.7% in June 2026.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284814"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284814",
+      "status": "Active"
     },
     {
       "pillar": "Inclusion",
@@ -110,7 +116,8 @@
       "target_year": "2047",
       "unit": "%",
       "notes": "Viksit Bharat vision is commonly framed as zero poverty; NITI estimate is 11.28% in 2022-23.",
-      "source": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=149053"
+      "source": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=149053",
+      "status": "Active"
     },
     {
       "pillar": "Inclusion",
@@ -126,7 +133,8 @@
       "target_year": "2029",
       "unit": "crore houses",
       "notes": "3.12 crore completed against cumulative target allocation of 4.18 crore as of 3 Aug 2026.",
-      "source": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297784"
+      "source": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297784",
+      "status": "Active"
     },
     {
       "pillar": "Climate & Energy",
@@ -142,7 +150,8 @@
       "target_year": "2030",
       "unit": "GW",
       "notes": "India crossed 300 GW non-fossil capacity; 500 GW target for 2030.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
+      "status": "Active"
     },
     {
       "pillar": "Climate & Energy",
@@ -158,7 +167,10 @@
       "target_year": "2030",
       "unit": "%",
       "notes": "50% installed-capacity milestone was reached in June 2025, ahead of the 2030 NDC timeline.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
+      "status": "Achieved",
+      "achievement_date": "Jun 2025",
+      "achievement_note": "India crossed the 50% non-fossil share milestone ahead of the 2030 NDC timeline."
     },
     {
       "pillar": "Climate & Energy",
@@ -174,7 +186,8 @@
       "target_year": "2070",
       "unit": "Net emissions",
       "notes": "Net-zero target is 2070.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2223720"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2223720",
+      "status": "Active"
     },
     {
       "pillar": "Digital & Infrastructure",
@@ -190,7 +203,8 @@
       "target_year": "2047",
       "unit": "Qualitative",
       "notes": "NITI's DPI@2047 roadmap frames DPI as a core enabler of inclusive socioeconomic growth.",
-      "source": "https://www.niti.gov.in/node/2272"
+      "source": "https://www.niti.gov.in/node/2272",
+      "status": "Active"
     },
     {
       "pillar": "Governance",
@@ -206,7 +220,8 @@
       "target_year": "2047",
       "unit": "Qualitative",
       "notes": "NITI emphasizes simplifying regulations, single-window systems, and periodic regulatory review.",
-      "source": "https://www.niti.gov.in/node/1630"
+      "source": "https://www.niti.gov.in/node/1630",
+      "status": "Active"
     },
     {
       "pillar": "Security",
@@ -222,7 +237,8 @@
       "target_year": "2047",
       "unit": "Qualitative",
       "notes": "NITI identifies cybersecurity and digital resilience as a core component of national security.",
-      "source": "https://www.niti.gov.in/node/1630"
+      "source": "https://www.niti.gov.in/node/1630",
+      "status": "Active"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -238,7 +254,8 @@
       "target_year": "2047",
       "unit": "crore registrations",
       "notes": "MY Bharat had more than 2.22 crore youth registrations as of July 2026.",
-      "source": "https://www.pib.gov.in/FactsheetDetails.aspx?ModuleId=16&id=150855"
+      "source": "https://www.pib.gov.in/FactsheetDetails.aspx?ModuleId=16&id=150855",
+      "status": "Active"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -254,7 +271,8 @@
       "target_year": "2047",
       "unit": "lakh startups",
       "notes": "PIB reported over 2.3 lakh recognised startups in June 2026.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272408"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272408",
+      "status": "Active"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -270,7 +288,8 @@
       "target_year": "2047",
       "unit": "crore women",
       "notes": "Rural development backgrounder reports 10.05 crore women mobilised across 90.09 lakh SHGs.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484",
+      "status": "Active"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -286,7 +305,8 @@
       "target_year": "2047",
       "unit": "%",
       "notes": "Government backgrounder cites extreme poverty at 5.3% in 2022-23.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484"
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484",
+      "status": "Active"
     },
     {
       "pillar": "Vision",
@@ -302,7 +322,8 @@
       "target_year": "2047",
       "unit": "US$ tn",
       "notes": "ViksitIndia compiles a roughly US$30–40tn 2047 ambition from various sources; treat as a broader vision benchmark.",
-      "source": "https://viksitindia.com/"
+      "source": "https://viksitindia.com/",
+      "status": "Active"
     },
     {
       "pillar": "Vision",
@@ -318,7 +339,8 @@
       "target_year": "2047",
       "unit": "US$ thousands",
       "notes": "ViksitIndia compiles a 2047 per-capita-income ambition around US$15k–18k; editable benchmark.",
-      "source": "https://viksitindia.com/"
+      "source": "https://viksitindia.com/",
+      "status": "Active"
     }
   ],
   "initiatives": [
@@ -835,12 +857,13 @@
       "ministry": "Ministry of Power / Ministry of New & Renewable Energy",
       "budget": "Not a single scheme budget",
       "spent": "Investment occurs across generation, transmission and sector-specific schemes",
-      "progress": "Track installed non-fossil capacity and associated grid/transmission build-out.",
+      "progress": "300.50 GW non-fossil installed capacity as of 31 Jul 2026 — just over 60% of the 500 GW target.",
       "target": "500 GW of non-fossil electricity capacity by 2030.",
-      "latest": "Dashboard benchmark tracks current installed capacity separately.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
-      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
-      "financial_metric_type": "No single programme budget"
+      "latest": "India crossed 300 GW non-fossil capacity in Jul 2026; the 500 GW target remains due by 2030.",
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=6",
+      "news": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=6",
+      "financial_metric_type": "No single programme budget",
+      "status": "Active"
     },
     {
       "theme": "Climate & energy",
