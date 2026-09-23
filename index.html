@@ -17,9 +17,31 @@ body{margin:0;font-family:Arial,sans-serif;background:#f7f8fa;color:#1f2937}head
 a{color:#245a84}@media(max-width:800px){.cards,.riskgrid{grid-template-columns:1fr 1fr}.initGrid{grid-template-columns:1fr}}@media(max-width:520px){.cards,.riskgrid{grid-template-columns:1fr}.initNode.level1{margin-left:10px}.initNode.level2{margin-left:20px}}
 </style></head><body>
 <header><h1>Viksit Bharat 2047</h1><p>Monitoring dashboard for benchmarks, initiatives and foreign-policy/international risks.</p></header>
-<nav><button id="bDash" class="active">Dashboard & Benchmarks</button><button id="bAchieved">Achieved</button><button id="bRisk">Foreign Policy & International Risks</button></nav>
+<nav><button id="bDash" class="active">Dashboard & Benchmarks</button><button id="bAchieved">Achieved</button><button id="bAnalysis">Analysis</button><button id="bRisk">Foreign Policy & International Risks</button></nav>
 <main><section id="dash" class="tab active"><div class="cards"><div class="card clickable" id="cardBench" data-view="benchmarks">Benchmarks<br><b id="nBench"></b></div><div class="card clickable" id="cardNum" data-view="numeric">Numeric metrics<br><b id="nNum"></b></div><div class="card clickable" id="cardMet" data-view="met">Targets met<br><b id="nMet"></b></div><div class="card clickable" id="cardInit" data-view="initiatives">Initiatives<br><b id="nInit"></b></div></div><div class="box" id="benchBox"><h2>Benchmarks</h2><div class="sectionNote" id="benchModeNote">Showing all benchmark indicators.</div><div id="themeTabs" class="themeTabs"></div><div class="filters"><input id="qB" placeholder="Search"><select id="pB"><option value="">All themes</option></select></div><div class="table"><table id="tB"></table></div></div><div class="box" id="initBox"><h2>Initiatives</h2><div class="sectionNote">Expand each parent initiative to see its formal sub-schemes, implementation initiatives and linked components. Budget fields distinguish programme outlays from actual expenditure, disbursement, procurement volume or investment.</div><div class="filters"><input id="qI" placeholder="Search initiatives, ministries, budgets…"><select id="pI"><option value="">All themes</option></select></div><div id="initiativeTree" class="initiativeTree"></div></div></section>
-<section id="achieved" class="tab"><div class="box"><h2>Achieved milestones</h2><p>Targets or milestones that official data shows have already been met. This is kept separate from active 2030/2047 targets.</p><div class="table"><table id="tA"></table></div></div></section><section id="risk" class="tab"><div class="box"><h2>Foreign Policy & International Risks</h2><p>Tracks current external risks to India's Viksit Bharat trajectory. Mitigation items are scenario options, not policy endorsements.</p><div class="filters"><input id="qR" placeholder="Search risks, routes, suppliers"><select id="pR"><option value="">All risk levels</option><option>High</option><option>Medium</option></select></div><div id="riskCards" class="riskgrid"></div></div><div class="box"><h2>Risk register</h2><div class="table"><table id="tR"></table></div></div></section></main>
+<section id="achieved" class="tab"><div class="box"><h2>Achieved milestones</h2><p>Targets or milestones that official data shows have already been met. This is kept separate from active 2030/2047 targets.</p><div class="table"><table id="tA"></table></div></div></section><section id="analysis" class="tab">
+  <div class="box">
+    <h2>Analysis</h2>
+    <p class="sectionNote">This section synthesizes the dashboard data. It distinguishes measured progress from interpretation and flags where evidence is incomplete.</p>
+    <div id="analysisCards" class="cards"></div>
+  </div>
+  <div class="box">
+    <h2>Where progress is strongest</h2>
+    <div id="analysisStrong"></div>
+  </div>
+  <div class="box">
+    <h2>Where progress is furthest from target</h2>
+    <div id="analysisWeak"></div>
+  </div>
+  <div class="box">
+    <h2>Data gaps & comparability</h2>
+    <div id="analysisGaps"></div>
+  </div>
+  <div class="box">
+    <h2>Cross-cutting observations</h2>
+    <div id="analysisCross"></div>
+  </div>
+</section><section id="risk" class="tab"><div class="box"><h2>Foreign Policy & International Risks</h2><p>Tracks current external risks to India's Viksit Bharat trajectory. Mitigation items are scenario options, not policy endorsements.</p><div class="filters"><input id="qR" placeholder="Search risks, routes, suppliers"><select id="pR"><option value="">All risk levels</option><option>High</option><option>Medium</option></select></div><div id="riskCards" class="riskgrid"></div></div><div class="box"><h2>Risk register</h2><div class="table"><table id="tR"></table></div></div></section></main>
 <script>
 let D,R;const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function num(v){let n=parseFloat(v);return Number.isFinite(n)?n:null}function prog(b){let a=num(b.baseline),c=num(b.current),t=num(b.target);if(a==null||c==null||t==null||a==t)return null;let x=b.direction==='Lower'?(a-c)/(a-t):(c-a)/(t-a);return Math.max(0,Math.min(1,x))}
@@ -50,13 +72,57 @@ function renderAchieved(){
  const xs=D.benchmarks.filter(x=>x.status==='Achieved');
  $('#tA').innerHTML='<tr><th>Theme</th><th>Milestone</th><th>Achieved</th><th>Current</th><th>Target</th><th>Notes</th><th>Source</th></tr>'+xs.map(x=>'<tr><td>'+esc(x.pillar)+'</td><td><b>'+esc(x.indicator)+'</b><br><small>'+esc(x.class)+'</small></td><td>'+esc(x.achievement_date||'—')+'</td><td>'+esc(x.current||'—')+' '+esc(x.unit||'')+'</td><td>'+esc(x.target||'—')+' '+esc(x.unit||'')+'</td><td>'+esc(x.achievement_note||x.notes||'')+'</td><td>'+(x.source?'<a target="_blank" href="'+esc(x.source)+'">Open</a>':'—')+'</td></tr>').join('');
 }
+function renderAnalysis(){
+  const measurable=D.benchmarks.map(b=>({b,p:prog(b)})).filter(x=>x.p!=null);
+  const achieved=D.benchmarks.filter(b=>b.status==='Achieved');
+  const gaps=D.benchmarks.filter(b=>!b.current||!b.target);
+  const strong=[...measurable].sort((a,b)=>b.p-a.p).slice(0,5);
+  const weak=[...measurable].sort((a,b)=>a.p-b.p).slice(0,5);
+  const activeInits=flattenInitiatives(D.initiatives).filter(x=>x.status!=='Achieved');
+  const noBudget=activeInits.filter(x=>(x.financial_metric_type||'').includes('No single') || (x.budget||'').toLowerCase().includes('no single'));
+  const riskHigh=R.filter(x=>x.risk==='High');
+
+  $('#analysisCards').innerHTML=
+    '<div class="card"><span>Measured benchmarks</span><br><b>'+measurable.length+'</b></div>'+
+    '<div class="card"><span>Achieved milestones</span><br><b>'+achieved.length+'</b></div>'+
+    '<div class="card"><span>Benchmarks with data gaps</span><br><b>'+gaps.length+'</b></div>'+
+    '<div class="card"><span>High external risks tracked</span><br><b>'+riskHigh.length+'</b></div>';
+
+  function rows(xs, reverse=false){
+    if(!xs.length) return '<p>No comparable numeric benchmarks available.</p>';
+    return '<div class="table"><table><tr><th>Theme</th><th>Indicator</th><th>Current</th><th>Target</th><th>Progress</th><th>Interpretation</th></tr>'+
+      xs.map(({b,p})=>'<tr><td>'+esc(b.pillar)+'</td><td><b>'+esc(b.indicator)+'</b></td><td>'+esc(b.current||'—')+' '+esc(b.unit||'')+'</td><td>'+esc(b.target||'—')+' '+esc(b.unit||'')+'</td><td>'+Math.round(p*100)+'%</td><td>'+(
+        p>=1?'Target/milestone met or exceeded':
+        p>=.75?'Closer to entered target':
+        p>=.5?'Midway or better toward entered target':
+        'Still materially below the entered target'
+      )+'</td></tr>').join('')+'</table></div>';
+  }
+  $('#analysisStrong').innerHTML=rows(strong);
+  $('#analysisWeak').innerHTML=rows(weak);
+
+  const byTheme={};
+  D.benchmarks.forEach(b=>{byTheme[b.pillar]??={total:0,gaps:0};byTheme[b.pillar].total++;if(!b.current||!b.target)byTheme[b.pillar].gaps++});
+  const gapRows=Object.entries(byTheme).sort((a,b)=>b[1].gaps-a[1].gaps).filter(x=>x[1].gaps>0);
+  $('#analysisGaps').innerHTML=
+    '<p><b>'+gaps.length+'</b> benchmark entries are missing either a current value or a target, so they cannot be given a comparable progress percentage. In addition, financial figures across initiatives are not directly comparable: a budget allocation, a loan sanctioned, procurement GMV and healthcare value represent different economic quantities.</p>'+
+    (gapRows.length?'<div class="table"><table><tr><th>Theme</th><th>Benchmarks</th><th>Missing current/target</th></tr>'+gapRows.map(([k,v])=>'<tr><td>'+esc(k)+'</td><td>'+v.total+'</td><td>'+v.gaps+'</td></tr>').join('')+'</table></div>':'')+
+    '<p><b>'+noBudget.length+'</b> initiatives/components are explicitly marked as having no single programme budget or as umbrella frameworks.</p>';
+
+  const strongestTheme = strong[0]?.b?.pillar || '—';
+  const weakestTheme = weak[0]?.b?.pillar || '—';
+  $('#analysisCross').innerHTML=
+    '<p><b>Benchmark picture:</b> Among metrics with comparable baseline/current/target values, the strongest visible progress currently appears in <b>'+esc(strongestTheme)+'</b>, while one of the largest remaining gaps is in <b>'+esc(weakestTheme)+'</b>. This is a dashboard observation, not an overall ranking of policy performance.</p>'+
+    '<p><b>Implementation picture:</b> The initiative portfolio mixes formal schemes, umbrella missions, policy frameworks, financing facilities and national targets. The hierarchy and financial-type badges are intended to prevent those from being treated as equivalent units.</p>'+
+    '<p><b>External exposure:</b> The foreign-policy risk register currently tracks <b>'+riskHigh.length+'</b> high-risk items. These should be read as contextual risks that can affect delivery costs, energy security, trade conditions or implementation timelines—not as forecasts of outcomes.</p>';
+}
 function renderRisk(){let q=$('#qR').value.toLowerCase(),p=$('#pR').value;let xs=R.filter(x=>(!p||x.risk===p)&&(!q||JSON.stringify(x).toLowerCase().includes(q)));$('#riskCards').innerHTML=xs.map(x=>'<div class="risk '+x.risk.toLowerCase()+'"><h3>'+esc(x.issue)+'</h3><small>As of '+esc(x.asof)+' · '+esc(x.risk)+' risk</small><p><b>Current:</b> '+esc(x.what)+'</p><p><b>India exposure:</b> '+esc(x.india)+'</p><p><b>Mitigation:</b> '+esc(x.options)+'</p><a target=_blank href="'+esc(x.source)+'">Source</a></div>').join('');$('#tR').innerHTML='<tr><th>Issue</th><th>As of</th><th>Risk</th><th>India exposure</th><th>Mitigation / sourcing options</th><th>Routes</th><th>What to watch</th><th>Source</th></tr>'+xs.map(x=>'<tr><td><b>'+esc(x.issue)+'</b></td><td>'+esc(x.asof)+'</td><td><span class="pill '+x.risk.toLowerCase()+'">'+esc(x.risk)+'</span></td><td>'+esc(x.india)+'</td><td>'+esc(x.options)+'</td><td>'+esc(x.route)+'</td><td>'+esc(x.watch)+'</td><td><a target=_blank href="'+esc(x.source)+'">Open</a></td></tr>').join('')}
-function showDashboard(){ $('#dash').classList.add('active');$('#achieved').classList.remove('active');$('#risk').classList.remove('active');$('#bDash').classList.add('active');$('#bAchieved').classList.remove('active');$('#bRisk').classList.remove('active') }
+function showDashboard(){ $('#dash').classList.add('active');$('#achieved').classList.remove('active');$('#analysis').classList.remove('active');$('#risk').classList.remove('active');$('#bDash').classList.add('active');$('#bAchieved').classList.remove('active');$('#bAnalysis').classList.remove('active');$('#bRisk').classList.remove('active') }
 function cardAction(view){
  showDashboard();
  if(view==='initiatives'){benchMode='all';document.querySelectorAll('.card.clickable').forEach(c=>c.classList.remove('activeCard'));$('#cardInit').classList.add('activeCard');$('#initBox').scrollIntoView({behavior:'smooth',block:'start'});return}
  $('#pB').value='';$('#qB').value='';benchMode=view==='numeric'?'numeric':view==='met'?'met':'all';renderDash();
  const id=view==='numeric'?'#cardNum':view==='met'?'#cardMet':'#cardBench';$(id).classList.add('activeCard');$('#benchBox').scrollIntoView({behavior:'smooth',block:'start'});
 }
-Promise.all([fetch('data.json').then(r=>r.json()),fetch('foreign.json').then(r=>r.json())]).then(([d,r])=>{D=d;R=r;renderDash();renderAchieved();renderRisk();document.querySelectorAll('.card.clickable').forEach(c=>c.onclick=()=>cardAction(c.dataset.view))});['qB','qI','pI'].forEach(i=>$('#'+i).oninput=renderDash);$('#pB').oninput=()=>{benchMode='all';renderDash()};['qR','pR'].forEach(i=>$('#'+i).oninput=renderRisk);$('#bDash').onclick=()=>{$('#dash').classList.add('active');$('#achieved').classList.remove('active');$('#risk').classList.remove('active');$('#bDash').classList.add('active');$('#bAchieved').classList.remove('active');$('#bRisk').classList.remove('active')};$('#bAchieved').onclick=()=>{$('#achieved').classList.add('active');$('#dash').classList.remove('active');$('#risk').classList.remove('active');$('#bAchieved').classList.add('active');$('#bDash').classList.remove('active');$('#bRisk').classList.remove('active')};$('#bRisk').onclick=()=>{$('#risk').classList.add('active');$('#dash').classList.remove('active');$('#achieved').classList.remove('active');$('#bRisk').classList.add('active');$('#bDash').classList.remove('active');$('#bAchieved').classList.remove('active')};
+Promise.all([fetch('data.json').then(r=>r.json()),fetch('foreign.json').then(r=>r.json())]).then(([d,r])=>{D=d;R=r;renderDash();renderAchieved();renderAnalysis();renderRisk();document.querySelectorAll('.card.clickable').forEach(c=>c.onclick=()=>cardAction(c.dataset.view))});['qB','qI','pI'].forEach(i=>$('#'+i).oninput=renderDash);$('#pB').oninput=()=>{benchMode='all';renderDash()};['qR','pR'].forEach(i=>$('#'+i).oninput=renderRisk);$('#bDash').onclick=()=>{$('#dash').classList.add('active');$('#achieved').classList.remove('active');$('#analysis').classList.remove('active');$('#risk').classList.remove('active');$('#bDash').classList.add('active');$('#bAchieved').classList.remove('active');$('#bAnalysis').classList.remove('active');$('#bRisk').classList.remove('active')};$('#bAchieved').onclick=()=>{$('#achieved').classList.add('active');$('#dash').classList.remove('active');$('#analysis').classList.remove('active');$('#risk').classList.remove('active');$('#bAchieved').classList.add('active');$('#bDash').classList.remove('active');$('#bAnalysis').classList.remove('active');$('#bRisk').classList.remove('active')};$('#bAnalysis').onclick=()=>{$('#analysis').classList.add('active');$('#dash').classList.remove('active');$('#achieved').classList.remove('active');$('#risk').classList.remove('active');$('#bAnalysis').classList.add('active');$('#bDash').classList.remove('active');$('#bAchieved').classList.remove('active');$('#bRisk').classList.remove('active')};$('#bRisk').onclick=()=>{$('#risk').classList.add('active');$('#dash').classList.remove('active');$('#achieved').classList.remove('active');$('#analysis').classList.remove('active');$('#bRisk').classList.add('active');$('#bDash').classList.remove('active');$('#bAchieved').classList.remove('active');$('#bAnalysis').classList.remove('active')};
 </script></body></html>
