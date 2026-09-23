@@ -15,7 +15,9 @@
       "unit": "% annual",
       "notes": "World Bank says ~7.8% average growth is needed to reach high-income status by 2047; FY2025-26 provisional real GDP growth is 7.7%.",
       "source": "https://www.worldbank.org/en/news/press-release/2025/02/28/india-accelerated-reforms-needed-to-speed-up-growth-and-achieve-high-income-status-by-2047",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official economic release"
     },
     {
       "pillar": "Economy",
@@ -32,7 +34,9 @@
       "unit": "% of GDP",
       "notes": "Economic Survey states investment rate must rise to ~35% of GDP from ~31%.",
       "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official release"
     },
     {
       "pillar": "Economy",
@@ -49,7 +53,9 @@
       "unit": "million/year",
       "notes": "Economic Survey estimates 78.5 lakh new non-farm jobs needed annually until 2030.",
       "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official release"
     },
     {
       "pillar": "Economy",
@@ -66,7 +72,9 @@
       "unit": "US$ bn",
       "notes": "Record total exports in FY2025-26. No single 2047 export target entered.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2290437",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official economic release"
     },
     {
       "pillar": "Human Development",
@@ -83,7 +91,9 @@
       "unit": "%",
       "notes": "Economic Survey identifies 100% literacy as necessary for Viksit Bharat.",
       "source": "https://www.indiabudget.gov.in/budget2025-26/economicsurvey/doc/echapter.pdf",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official release"
     },
     {
       "pillar": "Human Development",
@@ -93,14 +103,16 @@
       "direction": "Higher",
       "baseline": "32.0",
       "baseline_period": "Jun 2025",
-      "current": "32.7",
-      "current_period": "Jun 2026",
+      "current": "34.8",
+      "current_period": "Aug 2026",
       "target": "",
       "target_year": "2047",
       "unit": "%",
-      "notes": "Monthly PLFS: female LFPR 32.7% in June 2026.",
-      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284814",
-      "status": "Active"
+      "notes": "Monthly PLFS: female LFPR (15+) was 34.8% in August 2026.",
+      "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310427&lang=2&reg=48",
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Monthly official release"
     },
     {
       "pillar": "Inclusion",
@@ -117,7 +129,9 @@
       "unit": "%",
       "notes": "Viksit Bharat vision is commonly framed as zero poverty; NITI estimate is 11.28% in 2022-23.",
       "source": "https://www.pib.gov.in/FactsheetDetails.aspx?Id=149053",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
     },
     {
       "pillar": "Inclusion",
@@ -134,7 +148,9 @@
       "unit": "crore houses",
       "notes": "3.12 crore completed against cumulative target allocation of 4.18 crore as of 3 Aug 2026.",
       "source": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2297784",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Programme progress update"
     },
     {
       "pillar": "Climate & Energy",
@@ -151,7 +167,9 @@
       "unit": "GW",
       "notes": "India crossed 300 GW non-fossil capacity; 500 GW target for 2030.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Monthly official energy release"
     },
     {
       "pillar": "Climate & Energy",
@@ -170,7 +188,9 @@
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782",
       "status": "Achieved",
       "achievement_date": "Jun 2025",
-      "achievement_note": "India crossed the 50% non-fossil share milestone ahead of the 2030 NDC timeline."
+      "achievement_note": "India crossed the 50% non-fossil share milestone ahead of the 2030 NDC timeline.",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Monthly official energy release"
     },
     {
       "pillar": "Climate & Energy",
@@ -187,7 +207,9 @@
       "unit": "Net emissions",
       "notes": "Net-zero target is 2070.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2223720",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official release"
     },
     {
       "pillar": "Digital & Infrastructure",
@@ -204,7 +226,9 @@
       "unit": "Qualitative",
       "notes": "NITI's DPI@2047 roadmap frames DPI as a core enabler of inclusive socioeconomic growth.",
       "source": "https://www.niti.gov.in/node/2272",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
     },
     {
       "pillar": "Governance",
@@ -221,7 +245,9 @@
       "unit": "Qualitative",
       "notes": "NITI emphasizes simplifying regulations, single-window systems, and periodic regulatory review.",
       "source": "https://www.niti.gov.in/node/1630",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
     },
     {
       "pillar": "Security",
@@ -238,7 +264,9 @@
       "unit": "Qualitative",
       "notes": "NITI identifies cybersecurity and digital resilience as a core component of national security.",
       "source": "https://www.niti.gov.in/node/1630",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -255,7 +283,9 @@
       "unit": "crore registrations",
       "notes": "MY Bharat had more than 2.22 crore youth registrations as of July 2026.",
       "source": "https://www.pib.gov.in/FactsheetDetails.aspx?ModuleId=16&id=150855",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Programme progress update"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -272,7 +302,9 @@
       "unit": "lakh startups",
       "notes": "PIB reported over 2.3 lakh recognised startups in June 2026.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2272408",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Programme progress update"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -289,7 +321,9 @@
       "unit": "crore women",
       "notes": "Rural development backgrounder reports 10.05 crore women mobilised across 90.09 lakh SHGs.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Programme progress update"
     },
     {
       "pillar": "Four Amrit Pillars",
@@ -306,7 +340,9 @@
       "unit": "%",
       "notes": "Government backgrounder cites extreme poverty at 5.3% in 2022-23.",
       "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227484",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Latest official release"
     },
     {
       "pillar": "Vision",
@@ -323,7 +359,9 @@
       "unit": "US$ tn",
       "notes": "ViksitIndia compiles a roughly US$30–40tn 2047 ambition from various sources; treat as a broader vision benchmark.",
       "source": "https://viksitindia.com/",
-      "status": "Active"
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
     },
     {
       "pillar": "Vision",
@@ -340,6 +378,160 @@
       "unit": "US$ thousands",
       "notes": "ViksitIndia compiles a 2047 per-capita-income ambition around US$15k–18k; editable benchmark.",
       "source": "https://viksitindia.com/",
+      "status": "Active",
+      "last_checked": "23 Sep 2026",
+      "data_mode": "Curated policy / vision benchmark"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Population",
+      "indicator": "Projected population",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "1363.0",
+      "baseline_period": "2021 projection",
+      "current": "1425.9",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "million people",
+      "notes": "Official population projection for 2026. This is a projection, not a live population counter.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Age structure",
+      "indicator": "Working-age population share (15–59)",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "64.2",
+      "baseline_period": "2021 projection",
+      "current": "64.8",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "%",
+      "notes": "Official projection of the share of the population aged 15–59.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Ageing",
+      "indicator": "Population aged 60+",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "10.1",
+      "baseline_period": "2021 projection",
+      "current": "11.4",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "%",
+      "notes": "Official projection of the population aged 60 and above.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Age structure",
+      "indicator": "Median age",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "28.34",
+      "baseline_period": "2021 projection",
+      "current": "30.27",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "years",
+      "notes": "Official projected median age.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Dependency",
+      "indicator": "Total dependency ratio",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "55.7",
+      "baseline_period": "2021 projection",
+      "current": "54.3",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "dependants per 100 working-age people",
+      "notes": "Converted from the official projection's ratio of 543 dependants per 1,000 working-age people.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Fertility",
+      "indicator": "Total fertility rate",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "1.94",
+      "baseline_period": "2021–25 projection",
+      "current": "1.81",
+      "current_period": "2026–30 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "births per woman",
+      "notes": "Official projected TFR for 2026–30; this is not a contemporaneous survey estimate.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Population growth",
+      "indicator": "Population growth rate",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "0.90",
+      "baseline_period": "2021–25 projection",
+      "current": "0.73",
+      "current_period": "2026–30 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "% annual",
+      "notes": "Official projection reports 7.3 per thousand for 2026–30, shown here as approximately 0.73% per year.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
+      "status": "Active"
+    },
+    {
+      "pillar": "Demography & Population",
+      "area": "Sex composition",
+      "indicator": "Sex ratio",
+      "class": "Structural indicator",
+      "direction": "Neutral",
+      "baseline": "945",
+      "baseline_period": "2021 projection",
+      "current": "948",
+      "current_period": "2026 projection",
+      "target": "",
+      "target_year": "",
+      "unit": "females per 1,000 males",
+      "notes": "Official projected sex ratio.",
+      "source": "https://www.mohfw.gov.in/sites/default/files/Population%20Projection%20Report%202011-2036%20-%20upload_compressed_0.pdf",
+      "data_mode": "Official demographic projection",
+      "last_checked": "23 Sep 2026",
       "status": "Active"
     }
   ],
@@ -941,5 +1133,5 @@
       "financial_metric_type": "No single programme budget"
     }
   ],
-  "updated": "2026-09-19"
+  "updated": "2026-09-23"
 }
